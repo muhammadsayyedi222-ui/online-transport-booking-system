@@ -1,21 +1,41 @@
-# Online Transport Booking — Final Year Project (Localhost / XAMPP)
+Online Transport Booking System - GIGM Clone
 
-This is a ready-to-run PHP + MySQL project you can present to your supervisor.
-It includes:
-- Secure user registration (password hashing)
-- Admin panel (create admin via setup script)
-- CRUD for routes, vehicles, trips (admin)
-- User search & booking flow (bookings stored in DB)
-- Clean responsive CSS and placeholder GIGM bus background image
+PHP + MySQL transport booking project built for XAMPP. Ready to run.
+Demo Login (For Interviewers):
+Admin Login:
+Email: admin@local
+Password: Admin@123
+Link: /admin/setup_admin.php (run once to create admin)
 
-## Installation (Windows, XAMPP)
+User Login: Register new account or use test account you created
 
-1. Copy the folder `transport_booking_final` to `C:\xampp\htdocs\` and rename to `transport_booking` if desired.
-2. Start Apache and MySQL in XAMPP Control Panel.
-3. Open phpMyAdmin (http://localhost/phpmyadmin) and import `database.sql` (in the project root).
-4. Visit `http://localhost/transport_booking/admin/setup_admin.php` to create a default admin (run once).
-5. Open site: http://localhost/transport_booking/
+Features:
+- User registration and login with password hashing
+- Admin panel to manage routes, vehicles, trips
+- User search trips and book seats
+- Booking history stored in database
+- Responsive design with GIGM bus hero image
 
-Default admin after running setup:
-- Email: admin@local
-- Password: Admin@123
+Tech Stack:
+PHP, MySQL, HTML, CSS
+
+Folder Structure:
+admin/ - Admin dashboard
+user/ - User dashboard
+assets/
+  http://style.css
+  images/
+    http://gigm-bg.png - Background image
+http://db.php - Database connection
+http://index.php - Homepage
+http://database.sql - Database file to import
+
+How to Run on XAMPP:
+1. Copy booking_final to C:\xampp\htdocs\
+2. Start Apache and MySQL
+3. Go to phpmyadmin, create database transport_booking, import http://database.sql
+4. Open http://localhost/booking_final/
+5. Create admin: http://localhost/booking_final/admin/setup_admin.php
+
+Built by: Mohammed Alhaji Sayedi 
+Contact: 08133265647
